@@ -1,0 +1,152 @@
+/* General body styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #0e0e0e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #00ffe0;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-add, .btn-action {
+    background: linear-gradient(45deg, #ff0055, #ff55aa);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-add:hover, .btn-action:hover {
+    transform: scale(1.1);
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Blog Card */
+.blog-card {
+    background: #1a1a1a;
+    border: 2px solid #00ffe0;
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00ffe0;
+}
+
+/* Blog Image */
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Blog Title & Author */
+.blog-card h2 {
+    color: #ff55aa;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.blog-card .author {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Dates */
+.blog-card .date {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Actions */
+.actions {
+    margin-top: 1rem;
+}
+
+.actions a {
+    margin-right: 0.5rem;
+    color: #00ffe0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.actions a:hover {
+    color: #ff55aa;
+}
+
+/* Form Page */
+form {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid #ff55aa;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+form input[type="text"], form textarea, form input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+}
+
+/* View Post */
+.view-post img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.view-post h2 {
+    font-size: 2rem;
+    color: #00ffe0;
+}
+
+.view-post .author, .view-post .date {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.view-post p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
